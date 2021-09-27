@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_menu"
+    tools:context="com.smmousavisp.game.ottlo.gamebord">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="364dp"
+        android:layout_height="394dp"
+        app:srcCompat="@drawable/gamebord"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="140dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/socrp2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="140dp"
+        android:layout_height="84dp"
+        android:layout_marginRight="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/socrp1"
+        android:layout_marginEnd="3dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="293dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/nob_bord"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_playercolor"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/p1"
+        android:layout_marginRight="37dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.6"
+        android:layout_marginEnd="37dp" />
+
+    <TextView
+        android:id="@+id/txt_playername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:text="سید محمد"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView11"
+        app:layout_constraintRight_toLeftOf="@+id/img_playercolor"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/txt_player2score"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="25"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/txt_player1score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="25"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView10"
+        app:layout_constraintRight_toRightOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="309dp"
+        android:orientation="vertical"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView8"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.362">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv11"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="11"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv12"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="12"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv13"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="13"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv14"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="14"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv15"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="15"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv16"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="16"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv17"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="17"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv18"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="18"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv21"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="21"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv22"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="22"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv23"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="23"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv24"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="24"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv25"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="25"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv26"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="26"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv27"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="27"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv28"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="28"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv31"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="31"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv32"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="32"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv33"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="33"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv34"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="34"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv35"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="35"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv36"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="36"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv37"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="37"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv38"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="38"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv41"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="41"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv42"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="42"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv43"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="43"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv44"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="44"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv45"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="45"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv46"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="46"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv47"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="47"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv48"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="48"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv51"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="51"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv52"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="52"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv53"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="53"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv54"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="54"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv55"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="55"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv56"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="56"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv57"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="57"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv58"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="58"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv61"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="61"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv62"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="62"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv63"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="63"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv64"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="64"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv65"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="65"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv66"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="66"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv67"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="67"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv68"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="68"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv71"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="71"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv72"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="72"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv73"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="73"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv74"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="74"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv75"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="75"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv76"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="76"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv77"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="77"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv78"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="78"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv81"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="81"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv82"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="82"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv83"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="83"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv84"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="84"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv85"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="85"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv86"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="86"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv87"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="87"
+                app:srcCompat="@drawable/p1" />
+
+            <ImageView
+                android:id="@+id/iv88"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:tag="88"
+                app:srcCompat="@drawable/p1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
