@@ -4,7 +4,7 @@ I developed this game in 2018 for advanced programming course final project afte
 # How to Install
 You can clone this repository and build the APK file for yourself. You can build this project for Android 8.1 or later, it might even work for Android 6 or 7, but it hasn't been tested.
 
-An easier way to install and play the game would be downloading the APK file from releases on GitHub.
+An easier way to install and play the game would be downloading the APK file from [releases on GitHub](https://github.com/SMMousaviSP/reversi_game/releases/latest).
 
 # How to Play
 If you don't know Persian, here is a quick guide for playing the game. But if you want to learn how to play Reversi or you want to know more about this game, you can read about it on [Wikipedia](https://en.wikipedia.org/wiki/Reversi).
